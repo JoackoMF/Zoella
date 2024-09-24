@@ -2,10 +2,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 header {
@@ -24,6 +25,7 @@ header {
     display: flex;
     align-items: center;
     gap: 10px;
+    margin: auto;
 }
 
 .search-bar input {
@@ -31,12 +33,19 @@ header {
     width: 200px;
     border: 1px solid #ccc;
     border-radius: 3px;
-    margin-right: 0;
+    margin: 0;
 
 }
 .search-bar button img {
     width: 20px;
-    margin-left: 0;
+    margin:0;
+    border: none;
+}
+.search-bar button {
+    margin: 0;
+    border-radius: 40%;
+    padding: 4px;
+    border: none;
 }
 
 .contact-cart a {
@@ -44,6 +53,7 @@ header {
     text-decoration: none;
     color: black;
     font-size: 14px;
+    text-align: center;
 }
 
 .contact-cart img {
@@ -53,7 +63,7 @@ header {
 
 .product-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 20px;
     padding: 20px;
 }
@@ -65,11 +75,12 @@ header {
     border-radius: 15px;
     max-width: 250px;
     margin: auto;
+    background: linear-gradient(gray , transparent);
 }
 
 .product img {
-    width: 100%;
-    height: auto;
+    width: 200px;
+    height: 200px;
     border-radius: 10px;
 }
 
@@ -82,4 +93,11 @@ header {
 .product p:last-child {
     font-weight: bold;
     margin-top: 5px;
+}
+.chartbuy {
+    border: none;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 3px;
+    background:linear-gradient(#b8b8b8 1%,transparent) ; 
 }
